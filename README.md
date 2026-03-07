@@ -81,8 +81,8 @@ Portfólio pessoal de **Alan Ferreira de Oliveira**, Desenvolvedor Back-end Java
 
 ```bash
 # Clonar o repositório
-git clone https://github.com/AlanF-Oliveira/Portifolio.git
-cd Portifolio
+git clone https://github.com/AlanF-Oliveira/personal-portfolio.git
+cd personal-portfolio
 
 # Instalar dependências
 npm install
