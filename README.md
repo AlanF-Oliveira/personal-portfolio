@@ -1,22 +1,22 @@
 # 💼 Portfólio — Alan Ferreira de Oliveira
 
-Portfólio pessoal de **Alan Ferreira de Oliveira**, Desenvolvedor Back-end Java especializado em Spring Boot, APIs REST e PostgreSQL. Desenvolvido com **Next.js 16**, **TypeScript**, **Tailwind CSS** e componentes **shadcn/ui**.
+Portfólio pessoal de **Alan Ferreira de Oliveira**, Desenvolvedor Back-end Java especializado em Spring Boot, APIs REST e PostgreSQL. Desenvolvido com **Next.js 16**, **React 19**, **TypeScript** e **Tailwind CSS**, utilizando componentes **shadcn/ui**.
 
 ---
 
 ## 🚀 Tecnologias Utilizadas
 
-| Tecnologia | Descrição |
-|---|---|
-| Next.js 16 | Framework React com App Router |
-| React 19 | Biblioteca de UI |
-| TypeScript 5.7 | Tipagem estática |
-| Tailwind CSS 4 | Estilização utilitária |
-| shadcn/ui + Radix UI | Componentes acessíveis e estilizados |
-| Lucide React | Ícones |
-| next-themes | Suporte a tema claro/escuro |
-| Vercel Analytics | Monitoramento de acessos |
-| pnpm | Gerenciador de pacotes |
+| Tecnologia | Versão | Descrição |
+|---|---|---|
+| Next.js | 16.1.6 | Framework React com App Router |
+| React | 19.2.4 | Biblioteca de UI |
+| TypeScript | 5.7.3 | Tipagem estática |
+| Tailwind CSS | 4.2.0 | Estilização utilitária |
+| shadcn/ui + Radix UI | — | Componentes acessíveis e estilizados |
+| Lucide React | 0.564.0 | Ícones |
+| next-themes | 0.4.6 | Suporte a tema claro/escuro |
+| Vercel Analytics | 1.6.1 | Monitoramento de acessos |
+| Geist Font | — | Fonte via next/font/google |
 
 ---
 
@@ -24,25 +24,29 @@ Portfólio pessoal de **Alan Ferreira de Oliveira**, Desenvolvedor Back-end Java
 
 ```
 ├── app/
-│   ├── layout.tsx          # Layout raiz (metadata, fontes, Analytics)
-│   ├── page.tsx            # Página principal com todas as seções
-│   └── globals.css         # Estilos globais
+│   ├── layout.tsx                    # Layout raiz (metadata, fontes, Analytics)
+│   ├── page.tsx                      # Página principal com todas as seções
+│   └── globals.css                   # Estilos globais
 ├── components/
-│   ├── portfolio/          # Seções do portfólio
-│   │   ├── navigation.tsx  # Barra de navegação
-│   │   ├── hero.tsx        # Seção inicial / apresentação
-│   │   ├── about.tsx       # Sobre mim
-│   │   ├── skills.tsx      # Habilidades técnicas
-│   │   ├── projects.tsx    # Projetos
-│   │   ├── experience.tsx  # Experiência profissional
-│   │   ├── education.tsx   # Formação acadêmica
-│   │   ├── contact.tsx     # Contato
-│   │   └── footer.tsx      # Rodapé
-│   └── ui/                 # Componentes base (shadcn/ui)
-├── hooks/                  # Custom hooks
-├── lib/                    # Utilitários
-├── public/                 # Assets estáticos (ícones, imagens)
-├── styles/                 # Estilos adicionais
+│   ├── portfolio/                    # Seções do portfólio
+│   │   ├── navigation.tsx            # Barra de navegação
+│   │   ├── hero.tsx                  # Apresentação / Hero
+│   │   ├── about.tsx                 # Sobre mim
+│   │   ├── skills.tsx                # Habilidades técnicas
+│   │   ├── projects.tsx              # Projetos
+│   │   ├── experience.tsx            # Experiência profissional
+│   │   ├── education.tsx             # Formação acadêmica
+│   │   ├── contact.tsx               # Contato
+│   │   └── footer.tsx                # Rodapé
+│   └── ui/                           # Componentes base (shadcn/ui)
+├── hooks/                            # Custom hooks
+├── lib/                              # Utilitários (cn, etc.)
+├── public/                           # Assets estáticos
+│   ├── icon.svg
+│   ├── icon-light-32x32.png
+│   ├── icon-dark-32x32.png
+│   └── apple-icon.png
+├── styles/                           # Estilos adicionais
 ├── next.config.mjs
 ├── tsconfig.json
 └── package.json
@@ -54,13 +58,15 @@ Portfólio pessoal de **Alan Ferreira de Oliveira**, Desenvolvedor Back-end Java
 
 | Seção | Descrição |
 |---|---|
+| **Navigation** | Barra de navegação com links para as seções |
 | **Hero** | Apresentação com nome, cargo e links rápidos |
-| **Sobre** | Resumo profissional e objetivo |
-| **Habilidades** | Stack técnica (Java, Spring Boot, etc.) |
-| **Projetos** | Projetos com links para os repositórios |
-| **Experiência** | Histórico profissional |
-| **Educação** | Formação acadêmica |
-| **Contato** | Formulário e links de contato |
+| **About** | Resumo profissional e objetivo |
+| **Skills** | Stack técnica (Java, Spring Boot, etc.) |
+| **Projects** | Projetos com links para os repositórios |
+| **Experience** | Histórico profissional |
+| **Education** | Formação acadêmica |
+| **Contact** | Links e informações de contato |
+| **Footer** | Rodapé |
 
 ---
 
@@ -69,7 +75,7 @@ Portfólio pessoal de **Alan Ferreira de Oliveira**, Desenvolvedor Back-end Java
 ### Pré-requisitos
 
 - Node.js 18+
-- pnpm (recomendado) ou npm
+- npm
 
 ### Instalação
 
@@ -79,13 +85,13 @@ git clone https://github.com/AlanF-Oliveira/Portifolio.git
 cd Portifolio
 
 # Instalar dependências
-pnpm install
+npm install
 ```
 
 ### Desenvolvimento
 
 ```bash
-pnpm dev
+npm run dev
 ```
 
 Acesse [http://localhost:3000](http://localhost:3000)
@@ -93,21 +99,21 @@ Acesse [http://localhost:3000](http://localhost:3000)
 ### Build para produção
 
 ```bash
-pnpm build
-pnpm start
+npm run build
+npm start
 ```
 
 ### Lint
 
 ```bash
-pnpm lint
+npm run lint
 ```
 
 ---
 
 ## 🌐 Deploy
 
-O projeto está configurado para deploy na **Vercel**, com **Vercel Analytics** integrado para monitoramento de acessos.
+O projeto está configurado para deploy na **Vercel**, com **Vercel Analytics** integrado para monitoramento de acessos em produção.
 
 ---
 
