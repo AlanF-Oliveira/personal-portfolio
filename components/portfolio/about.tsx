@@ -9,7 +9,7 @@ export function About() {
         
         <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
           <p>
-            Sou um desenvolvedor <span className="text-foreground font-medium">Back-end Java em formação</span>, 
+            Sou um desenvolvedor <span className="text-foreground font-medium">Back-end Java</span>, 
             focado em construir APIs REST escaláveis e seguras. Minha stack principal inclui 
             <span className="text-foreground font-medium"> Spring Boot</span>, 
             <span className="text-foreground font-medium"> Spring Security com JWT</span> e 
@@ -18,16 +18,16 @@ export function About() {
           
           <p>
             Trago uma bagagem de <span className="text-foreground font-medium">7 anos como autônomo</span> em 
-            serviços digitais, onde desenvolvi habilidades essenciais como gestão de prazos, 
+            serviços digitais, onde desenvolvi habilidades como gestão de prazos, 
             comunicação efetiva e resolução de problemas. Essa experiência com clientes internacionais 
             também me proporcionou <span className="text-foreground font-medium">inglês intermediário</span> para 
             comunicação por texto.
           </p>
           
           <p>
-            Atualmente estou cursando <span className="text-foreground font-medium">Engenharia de Software</span> e 
-            buscando uma oportunidade de estágio ou posição júnior onde possa aplicar meus conhecimentos 
-            técnicos e continuar evoluindo como desenvolvedor.
+            Atualmente cursando <span className="text-foreground font-medium">Engenharia de Software</span> e 
+            buscando uma <span className="text-foreground font-medium">posição júnior</span> onde possa aplicar 
+            meus conhecimentos técnicos e continuar evoluindo como desenvolvedor.
           </p>
         </div>
       </div>

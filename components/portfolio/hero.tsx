@@ -17,9 +17,8 @@ export function Hero() {
         </h1>
         
         <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mb-8 leading-relaxed">
-          Construindo APIs REST robustas com Spring Boot, autenticação segura com JWT
-          e persistência eficiente com PostgreSQL. 7 anos de experiência em serviços
-          digitais com foco em prazos e qualidade de entrega.
+          Desenvolvedor Back-end Java focado em Spring Boot, APIs REST e PostgreSQL. 
+          Em transição de carreira, com sólida base técnica e projetos práticos desenvolvidos.
         </p>
         
         <div className="flex flex-wrap items-center gap-3 text-muted-foreground text-sm mb-10">
