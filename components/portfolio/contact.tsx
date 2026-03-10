@@ -6,7 +6,7 @@ const contactInfo = [
     icon: Mail,
     label: "Email",
     value: "alanf.olive@gmail.com",
-    href: "mailto:alanf.olive@gmail.com",
+    href: "https://mail.google.com/mail/?view=cm&to=alanf.olive@gmail.com&su=Contato%20via%20Portfolio",
   },
   {
     icon: Phone,
@@ -43,11 +43,11 @@ export function Contact() {
           <span className="w-12 h-px bg-primary" />
           Contato
         </h2>
-        
+
         <p className="text-2xl md:text-3xl font-semibold text-foreground mb-12 max-w-2xl text-balance">
           Interessado em trabalhar juntos? Vamos conversar!
         </p>
-        
+
         <div className="grid gap-8 md:grid-cols-2">
           <div className="space-y-6">
             {contactInfo.map((contact) => (
@@ -58,8 +58,10 @@ export function Contact() {
                 <div>
                   <p className="text-sm text-muted-foreground">{contact.label}</p>
                   {contact.href ? (
-                    <a 
+                    <a
                       href={contact.href}
+                      target="_blank"          
+                      rel="noopener noreferrer"
                       className="text-foreground hover:text-primary transition-colors"
                     >
                       {contact.value}
@@ -71,13 +73,10 @@ export function Contact() {
               </div>
             ))}
           </div>
-          
+
           <div className="flex flex-col justify-between">
             <div>
-              <p className="text-muted-foreground mb-6">
-                Aberto a oportunidades de estágio ou posições júnior em desenvolvimento Back-end Java.
-              </p>
-              
+
               <div className="flex gap-3">
                 {socialLinks.map((social) => (
                   <Button key={social.label} variant="outline" size="icon" asChild>
