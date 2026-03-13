@@ -23,6 +23,29 @@ const projects = [
     technologies: ["Java", "Spring Boot", "Spring Security", "JWT", "MongoDB", "MapStruct", "OpenFeign", "Gradle"],
     github: "https://github.com/AlanF-Oliveira/agendador-tarefas",
   },
+ {
+  title: "Serviço de Notificações por E-mail",
+  description: [
+    "Microsserviço responsável pelo envio automático de notificações por e-mail para tarefas agendadas.",
+    "Consulta diariamente tarefas com status PENDENTE no Agendador de Tarefas e realiza o disparo das notificações.",
+    "Após o envio do e-mail, o serviço atualiza o status da tarefa para NOTIFICADO.",
+    "Comunicação entre serviços realizada via OpenFeign e agendamento com @Scheduled do Spring.",
+    "E-mails enviados em HTML utilizando JavaMailSender (SMTP) e templates com Thymeleaf."
+  ],
+  technologies: ["Java", "Spring Boot", "OpenFeign", "JavaMailSender", "Thymeleaf", "Gradle"],
+  github: "https://github.com/AlanF-Oliveira/notificacao",
+},
+  {
+  title: "BFF — Agendador de Tarefas",
+  description: [
+    "Camada BFF (Backend for Frontend) responsável por centralizar e orquestrar as chamadas aos microsserviços de usuários e tarefas.",
+    "Integração entre serviços realizada via OpenFeign, com propagação do token JWT do usuário autenticado nas requisições internas.",
+    "Disponibiliza endpoints unificados para autenticação, cadastro de usuários e gerenciamento de tarefas.",
+    "Reduz o acoplamento do frontend com os microsserviços e simplifica o consumo das APIs."
+  ],
+  technologies: ["Java", "Spring Boot", "Spring Security", "JWT", "OpenFeign", "Maven"],
+  github: "https://github.com/AlanF-Oliveira/bff-agendador-tarefas",
+},
 ]
 
 export function Projects() {
