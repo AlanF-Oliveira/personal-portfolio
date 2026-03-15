@@ -2,7 +2,7 @@
 
 Portfólio pessoal de **Alan Ferreira de Oliveira**, Desenvolvedor Back-end Java especializado em Spring Boot, APIs REST e PostgreSQL. Desenvolvido com **Next.js 16**, **React 19**, **TypeScript** e **Tailwind CSS**, utilizando componentes **shadcn/ui**.
 
-Acesse o portfólio: [www.alanfo.dev](https://alanfo.dev)
+Acesse o portfólio: [alanfo.dev](https://alanfo.dev)
 ---
 
 ## 🚀 Tecnologias Utilizadas
