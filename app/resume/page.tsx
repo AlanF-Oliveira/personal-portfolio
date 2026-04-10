@@ -52,7 +52,7 @@ const projects = [
   {
     title: "Site / Portfólio",
     href: "https://alanfo.dev",
-    stack: "Next.js, TypeScript, Tailwind CSS, Vercel",
+    stack: "Git/GitHub, TypeScript, Tailwind CSS, Vercel",
     items: [
       "Desenvolvi e publiquei meu site pessoal para apresentação profissional e exibição de projetos.",
     ],
