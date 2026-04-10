@@ -186,9 +186,8 @@ export default function ResumePage() {
             <p className="text-sm text-muted-foreground leading-relaxed">
               Desenvolvedor Back-end Java (Júnior) com foco em APIs REST e microsserviços com Spring Boot. Tenho
               experiência prática em autenticação e autorização com Spring Security + JWT, comunicação entre serviços
-              com OpenFeign e persistência com PostgreSQL e MongoDB. Busco minha primeira oportunidade profissional para
-              contribuir com times ágeis, evoluir tecnicamente e entregar soluções bem estruturadas, seguras e de fácil
-              manutenção.
+              com OpenFeign e persistência com PostgreSQL e MongoDB. Tenho como objetivo contribuir com equipes ágeis,
+              evoluir tecnicamente e entregar soluções bem estruturadas, seguras e de fácil manutenção.
             </p>
           </section>
 
