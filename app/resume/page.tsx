@@ -52,7 +52,7 @@ const projects = [
   {
     title: "Site / Portfólio",
     href: "https://alanfo.dev",
-    stack: "Git/GitHub, TypeScript, Tailwind CSS, Vercel",
+    stack: "Next.js, TypeScript, Tailwind CSS, Vercel",
     items: [
       "Desenvolvi e publiquei meu site pessoal para apresentação profissional e exibição de projetos.",
     ],
@@ -266,7 +266,7 @@ export default function ResumePage() {
 
           {/* ===== FOOTER BADGES ===== */}
           <div className="flex flex-wrap gap-2 pt-2 border-t border-border">
-            {["Java", "Spring Boot", "Spring Security", "JWT", "PostgreSQL", "MongoDB", "Docker", "Next.js"].map(
+            {["Java", "Spring Boot", "Spring Security", "JWT", "PostgreSQL", "MongoDB", "Docker", "Git/GitHub"].map(
               (tech) => (
                 <Badge key={tech} variant="secondary" className="text-xs">
                   {tech}
