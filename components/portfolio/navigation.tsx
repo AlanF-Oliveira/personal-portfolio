@@ -3,6 +3,7 @@
 import { useState } from "react"
 import { Menu, X, Sun, Moon } from "lucide-react"
 import { useTheme } from "next-themes"
+import Link from "next/link"
 import { Button } from "@/components/ui/button"
 
 const navItems = [
@@ -37,6 +38,14 @@ export function Navigation() {
               </a>
             </li>
           ))}
+          <li>
+            <Link
+              href="/resume"
+              className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+            >
+              Currículo
+            </Link>
+          </li>
         </ul>
 
         {/* Theme Toggle + Mobile Menu */}
@@ -77,6 +86,15 @@ export function Navigation() {
                   </a>
                 </li>
               ))}
+              <li>
+                <Link
+                  href="/resume"
+                  className="text-muted-foreground hover:text-foreground transition-colors block py-2"
+                  onClick={() => setIsOpen(false)}
+                >
+                  Currículo
+                </Link>
+              </li>
             </ul>
           </div>
         )}
