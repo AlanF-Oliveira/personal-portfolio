@@ -50,7 +50,7 @@ const projects = [
     ],
   },
   {
-    title: "Site / Portfólio",
+    title: "Site/Portfólio",
     href: "https://alanfo.dev",
     stack: "Next.js, TypeScript, Tailwind CSS, Vercel",
     items: [
@@ -61,27 +61,35 @@ const projects = [
 
 const skillGroups = [
   {
-    label: "Linguagens & Frameworks",
-    value: "Java, Spring Boot, Spring Security, Spring Data JPA, Spring Data MongoDB",
+    label: "Linguagens e Frameworks",
+    value: "Java, Spring Boot, Spring Security, Spring Data JPA, Spring Data",
   },
   {
-    label: "Arquitetura & APIs",
+    label: "Arquitetura e APIs",
     value: "Microsserviços, API REST, BFF (Backend for Frontend), OpenFeign, DTOs, JWT",
+  },
+  {
+    label: "Metodologias Ágeis",
+    value: "Scrum, Kanban",
   },
   {
     label: "Banco de Dados",
     value: "PostgreSQL, MongoDB",
   },
   {
-    label: "DevOps & Ferramentas",
-    value: "Docker, Docker Compose, Git/GitHub, Swagger/OpenAPI, Maven, Gradle, Postman, IntelliJ IDEA",
+    label: "Testes Unitários",
+    value: "JUnit 5, Mockito",
+  },
+  {
+    label: "DevOps e Ferramentas",
+    value: "Docker, CI/CD, Git, GitHub, Swagger, OpenAPI, Maven, Gradle, Postman, IntelliJ IDEA",
   },
 ]
 
 const education = [
   {
     degree: "Bacharelado em Engenharia de Software",
-    institution: "UniAméricas Descomplica",
+    institution: "UniAmérica Descomplica",
     period: "Jan/2026 — Cursando",
   },
   {
@@ -94,7 +102,7 @@ const education = [
 const additionalInfo = [
   "Disponibilidade imediata para início.",
   "Flexibilidade para modelos de trabalho presencial (Fortaleza/CE), híbrido ou remoto.",
-  "Inglês intermediário (leitura, escrita e conversação).",
+  "Inglês intermediário.",
 ]
 
 function SectionHeading({ children }: { children: React.ReactNode }) {
@@ -184,10 +192,10 @@ export default function ResumePage() {
           <section>
             <SectionHeading>Resumo</SectionHeading>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              Desenvolvedor Back-end Java (Júnior) com foco em APIs REST e microsserviços com Spring Boot. Tenho
-              experiência prática em autenticação e autorização com Spring Security + JWT, comunicação entre serviços
-              com OpenFeign e persistência com PostgreSQL e MongoDB. Tenho como objetivo contribuir com equipes ágeis,
-              evoluir tecnicamente e entregar soluções bem estruturadas, seguras e de fácil manutenção.
+              Desenvolvedor Back-end Java (Júnior) com foco em APIs REST e microsserviços com Spring Boot. Experiência
+              prática em autenticação e autorização com Spring Security + JWT, comunicação entre serviços com OpenFeign
+              e persistência com PostgreSQL e MongoDB. Objetivo de contribuir com equipes ágeis, evoluir tecnicamente
+              e entregar soluções bem estruturadas, seguras e de fácil manutenção.
             </p>
           </section>
 
