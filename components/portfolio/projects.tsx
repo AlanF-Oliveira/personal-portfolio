@@ -40,7 +40,7 @@ const projects = [
     github: "https://github.com/AlanF-Oliveira/cadastro-usuario-testes-unitarios",
   },
   {
-    title: "Ecossistema de Microsserviços — BFF Agendador de Tarefas",
+    title: "Ecossistema de Microserviços — BFF Agendador de Tarefas",
     description: [
       "Experiência prática na construção de um BFF para centralizar o acesso do front-end aos serviços de usuários, tarefas e notificações.",
       "Orquestração de chamadas entre APIs com OpenFeign e endpoints unificados para reduzir acoplamento no cliente.",
@@ -49,7 +49,7 @@ const projects = [
     github: "https://github.com/AlanF-Oliveira/bff-agendador-tarefas",
   },
   {
-    title: "Ecossistema de Microsserviços — Usuário",
+    title: "Ecossistema de Microserviços — Usuário",
     description: [
       "API REST responsável pelo gerenciamento de usuários, autenticação e emissão/validação de JWT no ecossistema.",
       "Separação de responsabilidades para concentrar regras de identidade e acesso em um serviço dedicado.",
@@ -58,7 +58,7 @@ const projects = [
     github: "https://github.com/AlanF-Oliveira/usuario",
   },
   {
-    title: "Ecossistema de Microsserviços — Agendador de Tarefas",
+    title: "Ecossistema de Microserviços — Agendador de Tarefas",
     description: [
       "API REST para gerenciamento e agendamento de tarefas pessoais, com regras de status e consultas por período.",
       "Serviço separado para concentrar a lógica de tarefas e integrar com os demais componentes do ecossistema.",
@@ -67,7 +67,7 @@ const projects = [
     github: "https://github.com/AlanF-Oliveira/agendador-tarefas",
   },
   {
-    title: "Ecossistema de Microsserviços — Notificação",
+    title: "Ecossistema de Microserviços — Notificação",
     description: [
       "Microsserviço de envio de e-mails com templates HTML para comunicar eventos do sistema de tarefas.",
       "Integração com serviços do ecossistema para disparo de notificações e atualização de status de comunicação.",
