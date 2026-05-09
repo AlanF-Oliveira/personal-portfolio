@@ -24,7 +24,7 @@ const projects = [
   {
     title: "API SMS",
     description: [
-      "API REST para gerenciamento do ciclo de status de mensagens SMS, com endpoints para consulta e atualização.",
+      "API REST para gerenciamento do ciclo de mensagens SMS com atualização e consulta de status (pendente, enviado, entregue e falha).",
       "Projeto focado em fluxo de mensagens e padronização de respostas em uma arquitetura back-end com Spring Boot.",
     ],
     technologies: ["Java", "Spring Boot", "REST API", "Gradle"],
@@ -33,7 +33,7 @@ const projects = [
   {
     title: "Testes Unitários (Cadastro de Usuário)",
     description: [
-      "Projeto dedicado ao aprendizado prático de testes unitários em uma base de código já existente.",
+      "Projeto dedicado ao aprendizado prático de testes unitários em uma base de cadastro de usuários fornecida no curso.",
       "Implementação e evolução de testes para melhorar cobertura e confiança em regras de negócio de cadastro de usuários.",
     ],
     technologies: ["Java", "JUnit", "Mockito", "Testes Unitários", "Gradle"],
@@ -42,7 +42,7 @@ const projects = [
   {
     title: "Ecossistema de Microserviços — BFF Agendador de Tarefas",
     description: [
-      "Experiência prática na construção de um BFF para centralizar o acesso do front-end aos serviços de usuários, tarefas e notificações.",
+      "BFF construído como experiência prática para centralizar o acesso do front-end aos serviços de usuários, tarefas e notificações.",
       "Orquestração de chamadas entre APIs com OpenFeign e endpoints unificados para reduzir acoplamento no cliente.",
     ],
     technologies: ["Java", "Spring Boot", "OpenFeign", "JWT", "Maven"],
@@ -51,7 +51,7 @@ const projects = [
   {
     title: "Ecossistema de Microserviços — Usuário",
     description: [
-      "API REST responsável pelo gerenciamento de usuários, autenticação e emissão/validação de JWT no ecossistema.",
+      "API REST responsável por cadastro, consulta e atualização de usuários, além de autenticação com emissão/validação de JWT.",
       "Separação de responsabilidades para concentrar regras de identidade e acesso em um serviço dedicado.",
     ],
     technologies: ["Java", "Spring Boot", "Spring Security", "JWT", "PostgreSQL", "Gradle"],
