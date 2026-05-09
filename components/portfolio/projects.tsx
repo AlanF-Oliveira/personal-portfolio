@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button"
 
 const projects = [
   {
-    title: "Comunicação API",
+    title: "Comunicação API (Agendamento de Comunicações)",
     description: [
       "API REST para agendamento de comunicações com documentação de endpoints via Swagger (OpenAPI).",
       "Integração com API externa de e-mails, conversão DTO-Entity com MapStruct, GlobalExceptionHandler, Docker e testes unitários (Controller/Service).",
@@ -13,7 +13,7 @@ const projects = [
     github: "https://github.com/AlanF-Oliveira/comunicacao_api",
   },
   {
-    title: "Estoque",
+    title: "Estoque (API de Produtos e Categorias)",
     description: [
       "API REST para gerenciamento de produtos e categorias com operações de cadastro, consulta, atualização e remoção.",
       "Back-end em Spring Boot com persistência em PostgreSQL e modelagem focada em organização de catálogo.",
