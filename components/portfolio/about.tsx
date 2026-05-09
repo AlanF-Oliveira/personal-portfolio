@@ -1,13 +1,13 @@
 export function About() {
   return (
-    <section id="sobre" className="py-20 px-6 lg:px-20">
-      <div className="max-w-4xl">
-        <h2 className="text-sm uppercase tracking-wide text-muted-foreground mb-4 flex items-center gap-4">
+    <section id="sobre" className="px-6 py-24 lg:px-20">
+      <div className="max-w-4xl animate-in fade-in slide-in-from-bottom-3 duration-700">
+        <h2 className="mb-8 flex items-center gap-4 text-sm uppercase tracking-[0.18em] text-muted-foreground">
           <span className="w-12 h-px bg-primary" />
           Sobre Mim
         </h2>
         
-        <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
+        <div className="space-y-7 text-lg leading-relaxed text-muted-foreground">
           <p>
             Sou um desenvolvedor <span className="text-foreground font-medium">Back-end Java</span>, 
             focado em construir APIs REST escaláveis e seguras. Minha stack principal inclui 

@@ -37,22 +37,22 @@ const socialLinks = [
 
 export function Contact() {
   return (
-    <section id="contato" className="py-20 px-6 lg:px-20 bg-card/50">
-      <div className="max-w-4xl">
-        <h2 className="text-sm uppercase tracking-wide text-muted-foreground mb-4 flex items-center gap-4">
+    <section id="contato" className="px-6 py-24 lg:px-20">
+      <div className="max-w-5xl rounded-2xl border border-border/70 bg-card/50 p-8 shadow-xs backdrop-blur-sm lg:p-10 animate-in fade-in slide-in-from-bottom-3 duration-700">
+        <h2 className="mb-4 flex items-center gap-4 text-sm uppercase tracking-[0.18em] text-muted-foreground">
           <span className="w-12 h-px bg-primary" />
           Contato
         </h2>
 
-        <p className="text-2xl md:text-3xl font-semibold text-foreground mb-12 max-w-2xl text-balance">
+        <p className="mb-12 max-w-2xl text-2xl font-semibold text-balance text-foreground md:text-3xl">
           Interessado em trabalhar juntos? Vamos conversar!
         </p>
 
         <div className="grid gap-8 md:grid-cols-2">
-          <div className="space-y-6">
-            {contactInfo.map((contact) => (
-              <div key={contact.label} className="flex items-center gap-4">
-                <div className="p-3 bg-secondary rounded-lg">
+            <div className="space-y-6">
+              {contactInfo.map((contact) => (
+              <div key={contact.label} className="flex items-center gap-4 rounded-xl border border-transparent p-3 transition-colors hover:border-primary/20">
+                <div className="rounded-lg bg-secondary/80 p-3">
                   <contact.icon className="w-5 h-5 text-primary" />
                 </div>
                 <div>
@@ -79,7 +79,7 @@ export function Contact() {
 
               <div className="flex gap-3">
                 {socialLinks.map((social) => (
-                  <Button key={social.label} variant="outline" size="icon" asChild>
+                  <Button key={social.label} variant="outline" size="icon" asChild className="bg-background/70">
                     <a href={social.href} target="_blank" rel="noopener noreferrer">
                       <social.icon className="w-5 h-5" />
                       <span className="sr-only">{social.label}</span>

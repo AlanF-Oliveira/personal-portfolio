@@ -50,9 +50,9 @@ const projects = [
 
 export function Projects() {
   return (
-    <section id="projetos" className="py-20 px-6 lg:px-20">
-      <div className="max-w-4xl">
-        <h2 className="text-sm uppercase tracking-wide text-muted-foreground mb-12 flex items-center gap-4">
+    <section id="projetos" className="px-6 py-24 lg:px-20">
+      <div className="max-w-5xl animate-in fade-in slide-in-from-bottom-3 duration-700">
+        <h2 className="mb-12 flex items-center gap-4 text-sm uppercase tracking-[0.18em] text-muted-foreground">
           <span className="w-12 h-px bg-primary" />
           Projetos
         </h2>
@@ -61,16 +61,16 @@ export function Projects() {
           {projects.map((project) => (
             <article
               key={project.title}
-              className="group relative border border-border rounded-lg p-6 hover:border-primary/50 transition-colors"
+              className="group relative rounded-2xl border border-border/70 bg-card/60 p-7 shadow-xs backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:border-primary/40 hover:shadow-lg"
             >
               <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-4">
                 <div>
-                  <h3 className="text-xl font-semibold text-foreground group-hover:text-primary transition-colors">
+                  <h3 className="text-xl font-semibold text-foreground transition-colors group-hover:text-primary">
                     {project.title}
                   </h3>
                 </div>
 
-                <Button variant="outline" size="sm" asChild>
+                <Button variant="outline" size="sm" asChild className="bg-background/70">
                   <a href={project.github} target="_blank" rel="noopener noreferrer">
                     <Github className="w-4 h-4 mr-2" />
                     Ver Repositório
@@ -79,7 +79,7 @@ export function Projects() {
                 </Button>
               </div>
 
-              <ul className="space-y-3 text-muted-foreground mb-6">
+              <ul className="mb-6 space-y-3 text-muted-foreground">
                 {project.description.map((item, index) => (
                   <li key={index} className="flex gap-3">
                     <span className="text-primary mt-1.5">•</span>
@@ -88,12 +88,12 @@ export function Projects() {
                 ))}
               </ul>
 
-              <div className="flex flex-wrap gap-2">
+              <div className="flex flex-wrap gap-2.5">
                 {project.technologies.map((tech) => (
                   <Badge
                     key={tech}
                     variant="outline"
-                    className="text-xs"
+                    className="text-xs hover:scale-[1.02]"
                   >
                     {tech}
                   </Badge>

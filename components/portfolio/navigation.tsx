@@ -20,8 +20,8 @@ export function Navigation() {
   const { theme, setTheme } = useTheme()
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
-      <nav className="flex items-center justify-between px-6 lg:px-20 h-16">
+    <header className="fixed top-0 left-0 right-0 z-50 border-b border-border/70 bg-background/70 backdrop-blur-xl">
+      <nav className="mx-auto flex h-16 w-full max-w-6xl items-center justify-between px-6 lg:px-10">
         <a href="#" className="text-lg font-bold text-foreground">
           AF<span className="text-primary">.</span>
         </a>
@@ -32,7 +32,7 @@ export function Navigation() {
             <li key={item.label}>
               <a
                 href={item.href}
-                className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                className="text-sm text-muted-foreground transition-colors hover:text-foreground"
               >
                 {item.label}
               </a>
@@ -41,7 +41,7 @@ export function Navigation() {
           <li>
             <Link
               href="/resume"
-              className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                className="text-sm text-muted-foreground transition-colors hover:text-foreground"
             >
               Currículo
             </Link>
@@ -73,13 +73,13 @@ export function Navigation() {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="absolute top-16 left-0 right-0 bg-background border-b border-border md:hidden">
+          <div className="absolute left-0 right-0 top-16 border-b border-border/70 bg-background/95 backdrop-blur-xl md:hidden">
             <ul className="flex flex-col p-6 gap-4">
               {navItems.map((item) => (
                 <li key={item.label}>
                   <a
                     href={item.href}
-                    className="text-muted-foreground hover:text-foreground transition-colors block py-2"
+                    className="block py-2 text-muted-foreground transition-colors hover:text-foreground"
                     onClick={() => setIsOpen(false)}
                   >
                     {item.label}
@@ -89,7 +89,7 @@ export function Navigation() {
               <li>
                 <Link
                   href="/resume"
-                  className="text-muted-foreground hover:text-foreground transition-colors block py-2"
+                  className="block py-2 text-muted-foreground transition-colors hover:text-foreground"
                   onClick={() => setIsOpen(false)}
                 >
                   Currículo

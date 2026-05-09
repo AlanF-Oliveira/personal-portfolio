@@ -33,23 +33,23 @@ const skillCategories = [
 
 export function Skills() {
   return (
-    <section id="skills" className="py-20 px-6 lg:px-20 bg-card/50">
-      <div className="max-w-4xl">
-        <h2 className="text-sm uppercase tracking-wide text-muted-foreground mb-12 flex items-center gap-4">
+    <section id="skills" className="px-6 py-24 lg:px-20">
+      <div className="max-w-5xl rounded-2xl border border-border/70 bg-card/50 p-8 shadow-xs backdrop-blur-sm lg:p-10 animate-in fade-in slide-in-from-bottom-3 duration-700">
+        <h2 className="mb-12 flex items-center gap-4 text-sm uppercase tracking-[0.18em] text-muted-foreground">
           <span className="w-12 h-px bg-primary" />
           Competências
         </h2>
         
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {skillCategories.map((category) => (
-            <div key={category.title}>
-              <h3 className="text-foreground font-semibold mb-4">{category.title}</h3>
-              <div className="flex flex-wrap gap-2">
+            <div key={category.title} className="space-y-4 rounded-xl border border-transparent p-4 transition-colors hover:border-primary/20">
+              <h3 className="text-base font-semibold text-foreground">{category.title}</h3>
+              <div className="flex flex-wrap gap-2.5">
                 {category.skills.map((skill) => (
                   <Badge 
                     key={skill} 
                     variant="secondary"
-                    className="bg-secondary/80 hover:bg-secondary text-secondary-foreground"
+                    className="bg-secondary/85 text-secondary-foreground hover:scale-[1.02]"
                   >
                     {skill}
                   </Badge>
