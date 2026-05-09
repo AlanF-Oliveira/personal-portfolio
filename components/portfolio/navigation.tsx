@@ -21,7 +21,7 @@ export function Navigation() {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 border-b border-border/70 bg-background/70 backdrop-blur-xl">
-      <nav className="mx-auto flex h-16 w-full max-w-6xl items-center justify-between px-6 lg:px-10">
+      <nav className="flex h-16 w-full items-center justify-between px-4 sm:px-8 lg:px-14 2xl:px-20">
         <a href="#" className="text-lg font-bold text-foreground">
           AF<span className="text-primary">.</span>
         </a>
