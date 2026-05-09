@@ -19,9 +19,9 @@ const education = [
 
 export function Education() {
   return (
-    <section id="educacao" className="py-20 px-6 lg:px-20">
-      <div className="max-w-4xl">
-        <h2 className="text-sm uppercase tracking-wide text-muted-foreground mb-12 flex items-center gap-4">
+    <section id="educacao" className="px-6 py-24 lg:px-20">
+      <div className="max-w-5xl animate-in fade-in slide-in-from-bottom-3 duration-700">
+        <h2 className="mb-12 flex items-center gap-4 text-sm uppercase tracking-[0.18em] text-muted-foreground">
           <span className="w-12 h-px bg-primary" />
           Educação
         </h2>
@@ -30,10 +30,10 @@ export function Education() {
           {education.map((edu) => (
             <article 
               key={edu.degree}
-              className="p-6 border border-border rounded-lg hover:border-primary/50 transition-colors"
+              className="rounded-2xl border border-border/70 bg-card/60 p-6 shadow-xs backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:border-primary/40 hover:shadow-lg"
             >
               <div className="flex items-start gap-4">
-                <div className="p-3 bg-secondary rounded-lg">
+                <div className="rounded-lg bg-secondary/80 p-3">
                   <edu.icon className="w-6 h-6 text-primary" />
                 </div>
                 

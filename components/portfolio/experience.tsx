@@ -14,16 +14,16 @@ const experiences = [
 
 export function Experience() {
   return (
-    <section id="experiencia" className="py-20 px-6 lg:px-20 bg-card/50">
-      <div className="max-w-4xl">
-        <h2 className="text-sm uppercase tracking-wide text-muted-foreground mb-12 flex items-center gap-4">
+    <section id="experiencia" className="px-6 py-24 lg:px-20">
+      <div className="max-w-5xl rounded-2xl border border-border/70 bg-card/50 p-8 shadow-xs backdrop-blur-sm lg:p-10 animate-in fade-in slide-in-from-bottom-3 duration-700">
+        <h2 className="mb-12 flex items-center gap-4 text-sm uppercase tracking-[0.18em] text-muted-foreground">
           <span className="w-12 h-px bg-primary" />
           Experiência
         </h2>
         
         <div className="space-y-8">
           {experiences.map((exp) => (
-            <article key={exp.title} className="relative pl-6 border-l-2 border-border hover:border-primary/50 transition-colors">
+            <article key={exp.title} className="relative border-l-2 border-border pl-6 transition-colors hover:border-primary/50">
               <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-background border-2 border-primary" />
               
               <div className="mb-4">
