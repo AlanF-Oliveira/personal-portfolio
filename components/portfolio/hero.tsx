@@ -9,7 +9,7 @@ export function Hero() {
         <div className="mt-10 grid gap-12 lg:grid-cols-[1.25fr_1fr] lg:gap-20">
           <div>
             <h2 className="text-3xl font-medium tracking-tight sm:text-4xl">Desenvolvedor<br /><span className="text-primary">Full Stack Júnior.</span></h2>
-            <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground">Construo APIs com Java e Spring Boot e interfaces com Angular, React e TypeScript. Da tela à persistência, gosto de entender e conectar cada parte da aplicação.</p>
+            <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground">Desenvolvo aplicações web com Java, Spring Boot e TypeScript, conectando interfaces em Angular e React a APIs e bancos de dados.</p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Button asChild className="h-12 px-6"><a href="#projetos">Explorar projetos<ArrowDown className="ml-2 h-4 w-4" /></a></Button>
               <Button variant="outline" asChild className="h-12 px-6"><a href="/Alan_Ferreira_Full_Stack.pdf" download><FileDown className="mr-2 h-4 w-4" />Baixar currículo</a></Button>
