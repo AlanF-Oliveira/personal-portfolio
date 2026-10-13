@@ -4,12 +4,15 @@ import { Analytics } from '@vercel/analytics/next'
 import { ThemeProvider } from '@/components/theme-provider'
 import './globals.css'
 
-const _geist = Geist({ subsets: ["latin"] });
-const _geistMono = Geist_Mono({ subsets: ["latin"] });
+const _geist = Geist({ subsets: ["latin"], variable: "--font-geist" });
+const _geistMono = Geist_Mono({ subsets: ["latin"], variable: "--font-geist-mono" });
 
 export const metadata: Metadata = {
-  title: 'Alan Ferreira | Desenvolvedor Back-end Java',
-  description: 'Portfólio de Alan Ferreira de Oliveira - Desenvolvedor Back-end Java especializado em Spring Boot, APIs REST e PostgreSQL.',
+  title: 'Alan Ferreira | Desenvolvedor Full Stack Júnior',
+  description: 'Portfólio de Alan Ferreira de Oliveira - Desenvolvedor Full Stack Júnior com Java, Spring Boot, Angular, React e TypeScript. Conheça projetos, formação e currículo.',
+  metadataBase: new URL('https://www.alanfo.dev'),
+  alternates: { canonical: '/' },
+  openGraph: { title: 'Alan Ferreira | Desenvolvedor Full Stack Júnior', description: 'Projetos com Java, Spring Boot, Angular, React e TypeScript.', url: '/', locale: 'pt_BR', type: 'website' },
   icons: {
     icon: [
       {
@@ -36,7 +39,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR" suppressHydrationWarning>
-      <body className="font-sans antialiased">
+      <body className={`${_geist.variable} ${_geistMono.variable} font-sans antialiased`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"

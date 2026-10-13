@@ -10,12 +10,12 @@ import { Footer } from "@/components/portfolio/footer"
 
 export default function Portfolio() {
   return (
-    <main className="min-h-screen bg-[radial-gradient(120%_120%_at_50%_0%,rgba(96,165,250,0.12),transparent_50%)]">
+    <main className="portfolio-page min-h-screen">
       <Navigation />
       <Hero />
+      <Projects />
       <About />
       <Skills />
-      <Projects />
       <Experience />
       <Education />
       <Contact />

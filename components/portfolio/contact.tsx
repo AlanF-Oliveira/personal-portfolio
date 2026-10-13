@@ -6,7 +6,7 @@ const contactInfo = [
     icon: Mail,
     label: "Email",
     value: "alanf.olive@gmail.com",
-    href: "https://mail.google.com/mail/?view=cm&to=alanf.olive@gmail.com&su=Contato%20via%20Portfolio",
+    href: "mailto:alanf.olive@gmail.com?subject=Contato%20via%20portfólio",
   },
   {
     icon: Phone,
@@ -38,9 +38,9 @@ const socialLinks = [
 export function Contact() {
   return (
     <section id="contato" className="px-6 py-24 lg:px-20">
-      <div className="max-w-5xl rounded-2xl border border-border/70 bg-card/50 p-8 shadow-xs backdrop-blur-sm lg:p-10 animate-in fade-in slide-in-from-bottom-3 duration-700">
-        <h2 className="mb-4 flex items-center gap-4 text-sm uppercase tracking-[0.18em] text-muted-foreground">
-          <span className="w-12 h-px bg-primary" />
+      <div className="mx-auto max-w-6xl ">
+        <h2 className="section-title mb-8">
+
           Contato
         </h2>
 
@@ -60,7 +60,7 @@ export function Contact() {
                   {contact.href ? (
                     <a
                       href={contact.href}
-                      target="_blank"          
+                      target="_blank"
                       rel="noopener noreferrer"
                       className="text-foreground hover:text-primary transition-colors"
                     >
