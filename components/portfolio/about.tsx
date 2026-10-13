@@ -1,33 +1,23 @@
 export function About() {
   return (
     <section id="sobre" className="px-6 py-24 lg:px-20">
-      <div className="max-w-4xl animate-in fade-in slide-in-from-bottom-3 duration-700">
-        <h2 className="mb-8 flex items-center gap-4 text-sm uppercase tracking-[0.18em] text-muted-foreground">
-          <span className="w-12 h-px bg-primary" />
-          Sobre Mim
-        </h2>
-        
+      <div className="mx-auto max-w-6xl">
+        <h2 className="section-title mb-8">Sobre mim</h2>
         <div className="space-y-7 text-lg leading-relaxed text-muted-foreground">
           <p>
-            Sou um desenvolvedor <span className="text-foreground font-medium">Back-end Java</span>, 
-            focado em construir APIs REST escaláveis e seguras. Minha stack principal inclui 
-            <span className="text-foreground font-medium"> Spring Boot</span>, 
-            <span className="text-foreground font-medium"> Spring Security com JWT</span> e 
-            <span className="text-foreground font-medium"> PostgreSQL</span>.
+            Sou estudante de <span className="font-medium text-foreground">Engenharia de Software</span> e
+            desenvolvedor full stack júnior. Nos meus projetos, trabalho com o fluxo completo de uma aplicação:
+            da construção da interface à implementação das regras de negócio e à persistência dos dados.
           </p>
-          
           <p>
-            Trago uma bagagem de <span className="text-foreground font-medium">7 anos como autônomo</span> em 
-            serviços digitais, onde desenvolvi habilidades como gestão de prazos, 
-            comunicação efetiva e resolução de problemas. Essa experiência com clientes internacionais 
-            também me proporcionou <span className="text-foreground font-medium">inglês intermediário</span> para 
-            comunicação por texto.
+            Minha base técnica reúne <span className="font-medium text-foreground">Java e Spring Boot</span> no back-end
+            e <span className="font-medium text-foreground">Angular, React e TypeScript</span> no front-end.
+            Tenho prática com APIs REST, autenticação JWT, bancos SQL e NoSQL e testes automatizados,
+            com atenção à organização do código e à usabilidade.
           </p>
-          
           <p>
-            Atualmente cursando <span className="text-foreground font-medium">Engenharia de Software</span> e 
-            buscando uma <span className="text-foreground font-medium">posição júnior</span> onde possa aplicar 
-            meus conhecimentos técnicos e continuar evoluindo como desenvolvedor.
+            Busco uma oportunidade como <span className="font-medium text-foreground">desenvolvedor full stack júnior</span> para
+            contribuir com projetos reais, aprender com a equipe e aprofundar meus conhecimentos em desenvolvimento web.
           </p>
         </div>
       </div>

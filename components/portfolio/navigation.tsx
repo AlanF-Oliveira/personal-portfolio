@@ -8,16 +8,15 @@ import { Button } from "@/components/ui/button"
 
 const navItems = [
   { label: "Sobre", href: "#sobre" },
-  { label: "Skills", href: "#skills" },
+  { label: "Competências", href: "#skills" },
   { label: "Projetos", href: "#projetos" },
-  { label: "Experiência", href: "#experiencia" },
-  { label: "Educação", href: "#educacao" },
+  { label: "Formação", href: "#educacao" },
   { label: "Contato", href: "#contato" },
 ]
 
 export function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
-  const { theme, setTheme } = useTheme()
+  const { resolvedTheme, setTheme } = useTheme()
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 border-b border-border/70 bg-background/70 backdrop-blur-xl">
@@ -27,7 +26,7 @@ export function Navigation() {
         </a>
 
         {/* Desktop Navigation */}
-        <ul className="hidden md:flex items-center gap-8">
+        <ul className="hidden lg:flex items-center gap-8">
           {navItems.map((item) => (
             <li key={item.label}>
               <a
@@ -53,7 +52,7 @@ export function Navigation() {
           <Button
             variant="ghost"
             size="icon"
-            onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+            onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
           >
             <Sun className="h-4 w-4 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
             <Moon className="absolute h-4 w-4 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
@@ -63,17 +62,19 @@ export function Navigation() {
           <Button
             variant="ghost"
             size="icon"
-            className="md:hidden"
+            className="lg:hidden"
+            aria-expanded={isOpen}
+            aria-controls="mobile-navigation"
             onClick={() => setIsOpen(!isOpen)}
           >
             {isOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
-            <span className="sr-only">Menu</span>
+            <span className="sr-only">{isOpen ? "Fechar menu" : "Abrir menu"}</span>
           </Button>
         </div>
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="absolute left-0 right-0 top-16 border-b border-border/70 bg-background/95 backdrop-blur-xl md:hidden">
+          <div id="mobile-navigation" className="absolute left-0 right-0 top-16 border-b border-border/70 bg-background/95 backdrop-blur-xl lg:hidden">
             <ul className="flex flex-col p-6 gap-4">
               {navItems.map((item) => (
                 <li key={item.label}>
