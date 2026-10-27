@@ -6,7 +6,7 @@ export function About() {
         <div className="space-y-7 text-lg leading-relaxed text-muted-foreground">
           <p>
             Sou estudante de <span className="font-medium text-foreground">Engenharia de Software</span> e
-            desenvolvedor full stack júnior. Nos meus projetos, trabalho com o fluxo completo de uma aplicação:
+            desenvolvedor full stack. Nos meus projetos, trabalho com o fluxo completo de uma aplicação:
             da construção da interface à implementação das regras de negócio e à persistência dos dados.
           </p>
           <p>
@@ -14,10 +14,6 @@ export function About() {
             e <span className="font-medium text-foreground">Angular, React e TypeScript</span> no front-end.
             Tenho prática com APIs REST, autenticação JWT, bancos SQL e NoSQL e testes automatizados,
             com atenção à organização do código e à usabilidade.
-          </p>
-          <p>
-            Busco uma oportunidade como <span className="font-medium text-foreground">desenvolvedor full stack júnior</span> para
-            contribuir com projetos reais, aprender com a equipe e aprofundar meus conhecimentos em desenvolvimento web.
           </p>
         </div>
       </div>

@@ -157,6 +157,16 @@ export const projects: Project[] = [
 
 export const courses = [
   {
+    "title": "Acelera ZG - REST/RESTFUL API",
+    "issuer": "ZG Soluções",
+    "date": "out. 2026"
+  },
+  {
+    "title": "Acelera ZG - Webservices e Microservices",
+    "issuer": "ZG Soluções",
+    "date": "out. 2026"
+  },
+  {
     "title": "Acelera ZG - Padrões de Projeto",
     "issuer": "ZG Soluções",
     "date": "out. 2026"

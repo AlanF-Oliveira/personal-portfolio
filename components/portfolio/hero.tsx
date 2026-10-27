@@ -8,7 +8,7 @@ export function Hero() {
         <h1 className="hero-name">Alan Ferreira<span className="text-primary"> de Oliveira.</span></h1>
         <div className="mt-10 grid gap-12 lg:grid-cols-[1.25fr_1fr] lg:gap-20">
           <div>
-            <h2 className="text-3xl font-medium tracking-tight sm:text-4xl">Desenvolvedor<br /><span className="text-primary">Full Stack Júnior.</span></h2>
+            <h2 className="text-3xl font-medium tracking-tight sm:text-4xl">Desenvolvedor<br /><span className="text-primary">Full Stack.</span></h2>
             <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground">Desenvolvo aplicações web com Java, Spring Boot e TypeScript, conectando interfaces em Angular e React a APIs e bancos de dados.</p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Button asChild className="h-12 px-6"><a href="#projetos">Explorar projetos<ArrowDown className="ml-2 h-4 w-4" /></a></Button>
@@ -24,7 +24,7 @@ export function Hero() {
           </div>
         </div>
         <div className="mt-14 flex flex-wrap items-center justify-between gap-5 border-t border-border pt-6 text-sm text-muted-foreground">
-          <p>Fortaleza, Ceará <span className="mx-2 text-primary">/</span> Em busca de uma posição júnior</p>
+          <p>Fortaleza, Ceará</p>
           <div className="flex flex-wrap gap-6">
             <a className="hero-link" href="https://github.com/AlanF-Oliveira" target="_blank" rel="noopener noreferrer"><Github size={16} />GitHub</a>
             <a className="hero-link" href="https://linkedin.com/in/alanfo" target="_blank" rel="noopener noreferrer"><Linkedin size={16} />LinkedIn</a>
