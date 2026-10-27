@@ -24,7 +24,7 @@ export function Hero() {
           </div>
         </div>
         <div className="mt-14 flex flex-wrap items-center justify-between gap-5 border-t border-border pt-6 text-sm text-muted-foreground">
-          <p>Fortaleza, Ceará <span className="mx-2 text-primary">/</span> Em busca de uma posição em desenvolvimento full stack</p>
+          <p>Fortaleza, Ceará</p>
           <div className="flex flex-wrap gap-6">
             <a className="hero-link" href="https://github.com/AlanF-Oliveira" target="_blank" rel="noopener noreferrer"><Github size={16} />GitHub</a>
             <a className="hero-link" href="https://linkedin.com/in/alanfo" target="_blank" rel="noopener noreferrer"><Linkedin size={16} />LinkedIn</a>

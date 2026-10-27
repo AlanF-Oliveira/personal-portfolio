@@ -15,10 +15,6 @@ export function About() {
             Tenho prática com APIs REST, autenticação JWT, bancos SQL e NoSQL e testes automatizados,
             com atenção à organização do código e à usabilidade.
           </p>
-          <p>
-            Busco uma oportunidade em <span className="font-medium text-foreground">desenvolvimento full stack</span> para
-            contribuir com projetos reais, aprender com a equipe e aprofundar meus conhecimentos em desenvolvimento web.
-          </p>
         </div>
       </div>
     </section>
